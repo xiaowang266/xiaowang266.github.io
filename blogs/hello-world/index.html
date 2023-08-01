@@ -29,9 +29,9 @@
   <meta property="og:article:author" content="小王266">
   
   
-  <meta property="og:article:tag" content="编程">
-  
   <meta property="og:article:tag" content="游戏">
+  
+  <meta property="og:article:tag" content="编程">
   
   
   
@@ -103,6 +103,9 @@
   
   
   
+  
+  
+  <link rel="prefetch" href="//unpkg.com/valine/dist/Valine.min.js" as="script">
   
   
   
@@ -231,12 +234,12 @@
       <i class="iconfont icon-biaoqian" style="margin-right: 2px; font-size: 1.15rem;"></i>
       
       
-        <a href="/tags/编程/" class="post-meta-link">编程</a>
+        <a href="/tags/游戏/" class="post-meta-link">游戏</a>
       
       
       <span class="dot"></span>
       
-        <a href="/tags/游戏/" class="post-meta-link">游戏</a>
+        <a href="/tags/编程/" class="post-meta-link">编程</a>
       
     </div>
   </div>
@@ -277,6 +280,42 @@
   </div>
   
   
+</div>
+
+<div class="card card-content comment-card" style="margin-top: 16px;">
+  <div class="comment-card-title">评论</div>
+  
+  <div id="vcomments"></div>
+  
+  <script>
+    loadScript("//unpkg.com/valine/dist/Valine.min.js");
+    var oldLoadVa = window.onload;
+    window.onload = function () {
+      oldLoadVa && oldLoadVa();
+      new Valine({
+        el: '#vcomments',
+        appId: '3JB1D2AFCnMM4hnNen1Jim9P-gzGzoHsz',
+        appKey: 'hc1F9Aoc74z7gJqiKIuN80L5',
+        placeholder: '发一条友善的评论',
+        path: window.location.pathname,
+        avatar: 'mp',
+        meta: ["nick","mail","link"],
+        pageSize: '10',
+        lang: '',
+        visitor: 'false',
+        highlight: true,
+        recordIP: false,
+        
+        serverURLs: 'https://xw#266.comment.com',
+        
+        
+        
+        enableQQ: 'false',
+        requiredFields: [],
+      });
+    };
+  </script>
+
 </div>
 
 <div class="card card-content toc-card" id="mobiletoc">
@@ -437,7 +476,7 @@
           
           2021 -
           
-          2022
+          2023
         </span>
         &nbsp;
         <a href="/" class="footer-link">小王266的博客 </a>
@@ -462,6 +501,19 @@
     
     
     
+    
+      <div class="footer-dsc">
+        
+        本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        
+        
+        <span>&nbsp;|&nbsp;</span>
+        
+        
+        本站总访客数<span id="busuanzi_value_site_uv"></span>次
+        
+      </div>
+      
     
 </footer>
   <a role="button" id="scrollbutton" class="basebutton"  aria-label="回到顶部">
@@ -510,6 +562,8 @@
   
 <script src="/js/main.js"></script>
 
+  
+  <script>loadScript("/js/lib/busuanzi.min.js")</script>
   
   
   <script>
