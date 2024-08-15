@@ -19,28 +19,48 @@
   <link 
     rel="icon" 
     href="/img/Logo.png">
-  <title>小王266的博客</title>
+  <title>博客功能更新！</title>
   
     
       <meta 
         property="og:title" 
-        content="小王266的博客">
+        content="博客功能更新！">
     
     
       <meta 
         property="og:url" 
-        content="https://www.xiaowang266.top/index.html">
+        content="https://www.xiaowang266.top/blogs/blog-update/index.html">
     
     
       <meta 
         property="og:img" 
-        content="/img/Xiao_Wang_266.png">
+        content="/img/Hello-World-1.png">
     
     
       <meta 
         property="og:img" 
-        content="�����Ϸ�ͱ�̵ķ�����">
+        content="重大更新">
     
+    
+      <meta 
+        property="og:type" 
+        content="article">
+      <meta 
+        property="og:article:published_time" 
+        content="2023-08-14">
+      <meta 
+        property="og:article:modified_time" 
+        content="2023-08-14">
+      <meta 
+        property="og:article:author" 
+        content="小王266">
+      
+        
+          <meta 
+            property="og:article:tag" 
+            content="编程">
+        
+      
     
   
   
@@ -49,8 +69,8 @@
   <link rel="preload" href="/css/main.css" as="style" >
   
     
-      <link rel="prefetch" href="//unpkg.com/@waline/client@v2/dist/waline.css" as="style">
-      <link rel="prefetch" href="//unpkg.com/@waline/client@v2/dist/waline.js" as="script">
+      <link rel="preload" href="//unpkg.com/@waline/client@v2/dist/waline.css" as="style" >
+      <link rel="preload" href="//unpkg.com/@waline/client@v2/dist/waline.js" as="script">
     
   
   
@@ -61,6 +81,10 @@
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1952792_89b4ac4k4up.css">
   
   
+    <link rel="stylesheet" href="//unpkg.com/@waline/client@v2/dist/waline.css">
+  
+  
+    <link rel="stylesheet" href="/js/lib/lightbox/baguetteBox.min.css">
   
   <script>
     function loadScript(url, cb) {
@@ -291,392 +315,184 @@
           <div class="columns">
             <div class="left-holder"></div>
             <main class="main-column">
-  <div class="card">
+  <div class="image-wrapper">
+    <img 
+      src="/img/Hello-World-1.png" 
+      data-src="/img/Hello-World-1.png"
+      srcset="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20300%20300&#39;%3E%3C/svg%3E"
+      class="image lozad"
+      alt="博客功能更新！ thumbnail">
+  </div>
+
+<article class="card card-content">
+  <header>
+    <h1 class="post-title">
+      博客功能更新！
+    </h1>
+  </header>
+  <div class="post-meta post-show-meta">
+    <time datetime="2023-08-14T07:00:00.000Z">
+      <i 
+        class="iconfont icon-calendar" 
+        style="margin-right: 2px;">
+      </i>
+      <span>2023-08-14</span>
+    </time>
     
+      <span class="dot"></span>
+      
+        <a 
+          href="/categories/%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/" 
+          class="post-meta-link">
+          日常随笔
+        </a>
+      
+    
+    
+      <span class="dot"></span>
+      <span>358 字</span>
+    
+  </div>
+  
+    <div 
+      class="post-meta post-show-meta" 
+      style="margin-top: -10px;">
+      <div style="display: flex; align-items: center;">
+        <i 
+          class="iconfont icon-biaoqian" 
+          style="margin-right: 2px; font-size: 1.15rem;">
+        </i>
+        
+          
+          <a 
+            href="/tags/%E7%BC%96%E7%A8%8B/" 
+            class="post-meta-link">
+            编程
+          </a>
+        
+      </div>
+    </div>
+  
+  </header>
+  <div 
+    id="section" 
+    class="post-content">
+    <p>时间又过了两年半，是时候更新啦( •̀ ω •́ )✧</p>
+<p>这次总共有两个大改动：</p>
+<h3 id="一、网站迁移"><a href="#一、网站迁移" class="headerlink" title="一、网站迁移"></a>一、网站迁移</h3><p>此博客以前是建立在Github上的，这导致在部分网络环境下出现访问缓慢或根本不能访问的情况。因此我将博客迁移到了国内的Gitee上，而原先的博客将很快被<u><strong>删除</strong></u>。所以烦请收藏了我网站的人再次收藏一下（如果有的话(✿◡‿◡)）。</p>
+<p>***<u>新的链接</u>***：<a target="_blank" rel="noopener" href="https://xiaowang266.gitee.io/">https://xiaowang266.gitee.io/</a></p>
+<h3 id="二、评论系统"><a href="#二、评论系统" class="headerlink" title="二、评论系统"></a>二、评论系统</h3><p>两年半之前我曾提过评论系统的事儿，当时我因为平台实名问题不能用<a target="_blank" rel="noopener" href="https://www.leancloud.cn/">LeanCloud</a>，所以也就不能实装评论功能。但现在那个问题解决了，所以我就花了点儿时间研究了一下，把当年觉得的最重要的功能给装上了。</p>
+<p>总体来说不复杂，因为我这个主题内置兼容评论系统😂只要跟着教程做就行了。相比较来看，<a target="_blank" rel="noopener" href="https://valine.js.org/">Valine</a>确实是常见的几个博客评论系统里最好的了。它最大的优势就是用户不需要登录就能评论，并且它还自带一套微博小黄脸表情，基本能满足日常表达的需求。</p>
+<p><strong>注意：Valine不支持撤回评论。</strong></p>
+<p>另外还有一点儿小改动，我就不多说了。</p>
+<p>最后祝大家一帆风顺、万事如意！</p>
+
+  </div>
+  <div>
+    
+      <div 
+        class="post-note note-info copyright" 
+        style="margin-top: 42px">
+        <p>
+          <span style="font-weight: bold;">作者：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="/about">
+            小王266
+          </a>
+        </p>
+        <p>
+          <span style="font-weight: bold;">文章链接：</span><a 
+            target="_blank" 
+            rel="nofollow noopener noreferrer" 
+            href="https://www.xiaowang266.top/blogs/blog-update/">
+            https://www.xiaowang266.top/blogs/blog-update/
+          </a>
+        </p>
+        <p><span style="font-weight: bold;">版权声明：</span>本博客所有文章除特别声明外，均采用均采用MIT协议。转载请注明原作者~</p>
+      </div>
+    
+  </div>
+</article>
+<div class="nav">
+  
+    <div class="nav-item-prev">
       <a 
         href="/blogs/notes-tutorial-and-update/" 
-        class="image-wrapper" 
-        aria-label="thumbnail">
-        <img 
-          src="https://s2.loli.net/2024/08/13/7r4TF25KuemiZvx.png" 
-          data-src="https://s2.loli.net/2024/08/13/7r4TF25KuemiZvx.png"
-          alt="电子书弹出式注释制作教程&amp;博客更新 banner"
-          srcset="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20300%20300&#39;%3E%3C/svg%3E"
-          class="image lozad">
-      </a>
-    
-    <article class="card card-content">
-      <a href="/blogs/notes-tutorial-and-update/">
-        <h1 class="post-title">
-          电子书弹出式注释制作教程&amp;博客更新
-        </h1>
-      </a>
-      <div class="card-excerpt">
-        
-          心得分享
-        
-      </div>
-      <div class="card-post-footer">
-        <div class="post-meta">
-          <time datetime="2024-08-14T05:00:00.000Z">
-            <i 
-              class="iconfont icon-calendar" 
-              style="margin-right: 2px;">
-            </i>
-            <span>2024-08-14</span>
-          </time>
+        class="nav-link">
+        <i class="iconfont icon-left nav-prev-icon"></i>
+        <div>
+          <div class="nav-label">上一篇</div>
           
-            
-            
-              
-            
-            <span class="dot"></span>
-            
-              
-              <a 
-                href="/categories/%E6%96%B9%E6%B3%95%E6%95%99%E7%A8%8B/" 
-                class="post-meta-link">
-                方法教程
-              </a>
-            
+            <div class="nav-title">电子书弹出式注释制作教程&amp;博客更新 </div>
           
         </div>
-        <a href="/blogs/notes-tutorial-and-update/">继续阅读 </a>
-      </div>
-    </article>
-  </div>
-
-  <div class="card">
-    
-      <a 
-        href="/blogs/blog-update/" 
-        class="image-wrapper" 
-        aria-label="thumbnail">
-        <img 
-          src="/img/Hello-World-1.png" 
-          data-src="/img/Hello-World-1.png"
-          alt="博客功能更新！ banner"
-          srcset="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20300%20300&#39;%3E%3C/svg%3E"
-          class="image lozad">
       </a>
-    
-    <article class="card card-content">
-      <a href="/blogs/blog-update/">
-        <h1 class="post-title">
-          博客功能更新！
-        </h1>
-      </a>
-      <div class="card-excerpt">
-        
-          重大更新
-        
-      </div>
-      <div class="card-post-footer">
-        <div class="post-meta">
-          <time datetime="2023-08-14T07:00:00.000Z">
-            <i 
-              class="iconfont icon-calendar" 
-              style="margin-right: 2px;">
-            </i>
-            <span>2023-08-14</span>
-          </time>
-          
-            
-            
-              
-            
-            <span class="dot"></span>
-            
-              
-              <a 
-                href="/categories/%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/" 
-                class="post-meta-link">
-                日常随笔
-              </a>
-            
-          
-        </div>
-        <a href="/blogs/blog-update/">继续阅读 </a>
-      </div>
-    </article>
-  </div>
-
-  <div class="card">
-    
+    </div>
+  
+  
+    <div class="nav-item-next">
       <a 
         href="/blogs/introduce-littlemaidmob/" 
-        class="image-wrapper" 
-        aria-label="thumbnail">
-        <img 
-          src="/img/introduce-littlemaidmob-1.png" 
-          data-src="/img/introduce-littlemaidmob-1.png"
-          alt="模组介绍：女仆模组 banner"
-          srcset="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20300%20300&#39;%3E%3C/svg%3E"
-          class="image lozad">
-      </a>
-    
-    <article class="card card-content">
-      <a href="/blogs/introduce-littlemaidmob/">
-        <h1 class="post-title">
-          模组介绍：女仆模组
-        </h1>
-      </a>
-      <div class="card-excerpt">
-        
-          经典模组
-        
-      </div>
-      <div class="card-post-footer">
-        <div class="post-meta">
-          <time datetime="2022-02-01T09:00:00.000Z">
-            <i 
-              class="iconfont icon-calendar" 
-              style="margin-right: 2px;">
-            </i>
-            <span>2022-02-01</span>
-          </time>
+        class="nav-link">
+        <div>
+          <div class="nav-label">下一篇</div>
           
-            
-            
-              
-            
-            <span class="dot"></span>
-            
-              
-              <a 
-                href="/categories/%E6%8E%A8%E8%8D%90%E4%BB%8B%E7%BB%8D/" 
-                class="post-meta-link">
-                推荐介绍
-              </a>
-            
+            <div class="nav-title">模组介绍：女仆模组 </div>
           
         </div>
-        <a href="/blogs/introduce-littlemaidmob/">继续阅读 </a>
-      </div>
-    </article>
+        <i class="iconfont icon-right nav-next-icon"></i>
+      </a>
+    </div>
+  
+</div>
+
+  <div 
+    class="card card-content comment-card" 
+    style="margin-top: 16px;">
+    <div class="comment-card-title">评论</div>
+    
+  <div id="wcomments"></div>
+  <script>
+      loadScript("//unpkg.com/@waline/client@v2/dist/waline.js");
+      var oldLoadVa = window.onload;
+      window.onload = function () {
+        oldLoadVa && oldLoadVa();
+        Waline.init({
+          el: '#wcomments',
+          serverURL: 'https://waline.xiaowang266.top/',
+          path: window.location.pathname,
+          lang: 'zh-CN',
+          placeholder: '',
+          meta: ["nick","mail","link"],
+          requiredMeta: [],
+          dark: ':not([data-user-color-scheme]):root',
+          login: 'enable',
+
+          wordLimit: 0,
+          pageSize: 10,
+          
+          
+          
+            locale : {"placeholder":"发一条友善的评论"},
+          
+        });
+      };
+    </script>
+
   </div>
 
-  <div class="card">
-    
-      <a 
-        href="/blogs/recommend-thebindingofisaacrebirth/" 
-        class="image-wrapper" 
-        aria-label="thumbnail">
-        <img 
-          src="/img/recommend-thebindingofisaacrebirth-1.jpg" 
-          data-src="/img/recommend-thebindingofisaacrebirth-1.jpg"
-          alt="游戏推荐：《以撒的结合：重生》 banner"
-          srcset="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20300%20300&#39;%3E%3C/svg%3E"
-          class="image lozad">
-      </a>
-    
-    <article class="card card-content">
-      <a href="/blogs/recommend-thebindingofisaacrebirth/">
-        <h1 class="post-title">
-          游戏推荐：《以撒的结合：重生》
-        </h1>
-      </a>
-      <div class="card-excerpt">
-        
-          特别好评
-        
-      </div>
-      <div class="card-post-footer">
-        <div class="post-meta">
-          <time datetime="2021-04-03T02:00:00.000Z">
-            <i 
-              class="iconfont icon-calendar" 
-              style="margin-right: 2px;">
-            </i>
-            <span>2021-04-03</span>
-          </time>
-          
-            
-            
-              
-            
-            <span class="dot"></span>
-            
-              
-              <a 
-                href="/categories/%E6%8E%A8%E8%8D%90%E4%BB%8B%E7%BB%8D/" 
-                class="post-meta-link">
-                推荐介绍
-              </a>
-            
-          
-        </div>
-        <a href="/blogs/recommend-thebindingofisaacrebirth/">继续阅读 </a>
-      </div>
-    </article>
-  </div>
-
-  <div class="card">
-    
-      <a 
-        href="/blogs/these-brands-are-not-worthy/" 
-        class="image-wrapper" 
-        aria-label="thumbnail">
-        <img 
-          src="/img/these-brands-are-not-worthy.jpg" 
-          data-src="/img/these-brands-are-not-worthy.jpg"
-          alt="H&amp;M风波——吃中国的饭，砸中国的碗 banner"
-          srcset="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20300%20300&#39;%3E%3C/svg%3E"
-          class="image lozad">
-      </a>
-    
-    <article class="card card-content">
-      <a href="/blogs/these-brands-are-not-worthy/">
-        <h1 class="post-title">
-          H&amp;M风波——吃中国的饭，砸中国的碗
-        </h1>
-      </a>
-      <div class="card-excerpt">
-        
-          坚决抵制
-        
-      </div>
-      <div class="card-post-footer">
-        <div class="post-meta">
-          <time datetime="2021-03-27T11:00:00.000Z">
-            <i 
-              class="iconfont icon-calendar" 
-              style="margin-right: 2px;">
-            </i>
-            <span>2021-03-27</span>
-          </time>
-          
-            
-            
-              
-            
-            <span class="dot"></span>
-            
-              
-              <a 
-                href="/categories/%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/" 
-                class="post-meta-link">
-                日常随笔
-              </a>
-            
-          
-        </div>
-        <a href="/blogs/these-brands-are-not-worthy/">继续阅读 </a>
-      </div>
-    </article>
-  </div>
-
-  <div class="card">
-    
-      <a 
-        href="/blogs/recommend-deadcells/" 
-        class="image-wrapper" 
-        aria-label="thumbnail">
-        <img 
-          src="/img/recommend-deadcells-1.jpg" 
-          data-src="/img/recommend-deadcells-1.jpg"
-          alt="游戏推荐：《死亡细胞》 banner"
-          srcset="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20300%20300&#39;%3E%3C/svg%3E"
-          class="image lozad">
-      </a>
-    
-    <article class="card card-content">
-      <a href="/blogs/recommend-deadcells/">
-        <h1 class="post-title">
-          游戏推荐：《死亡细胞》
-        </h1>
-      </a>
-      <div class="card-excerpt">
-        
-          特别好评
-        
-      </div>
-      <div class="card-post-footer">
-        <div class="post-meta">
-          <time datetime="2021-02-10T01:00:00.000Z">
-            <i 
-              class="iconfont icon-calendar" 
-              style="margin-right: 2px;">
-            </i>
-            <span>2021-02-10</span>
-          </time>
-          
-            
-            
-              
-            
-            <span class="dot"></span>
-            
-              
-              <a 
-                href="/categories/%E6%8E%A8%E8%8D%90%E4%BB%8B%E7%BB%8D/" 
-                class="post-meta-link">
-                推荐介绍
-              </a>
-            
-          
-        </div>
-        <a href="/blogs/recommend-deadcells/">继续阅读 </a>
-      </div>
-    </article>
-  </div>
-
-  <div class="card">
-    
-      <a 
-        href="/blogs/hello-world/" 
-        class="image-wrapper" 
-        aria-label="thumbnail">
-        <img 
-          src="/img/Hello-World-1.png" 
-          data-src="/img/Hello-World-1.png"
-          alt="博客基本搭建完成！ banner"
-          srcset="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20300%20300&#39;%3E%3C/svg%3E"
-          class="image lozad">
-      </a>
-    
-    <article class="card card-content">
-      <a href="/blogs/hello-world/">
-        <h1 class="post-title">
-          博客基本搭建完成！
-        </h1>
-      </a>
-      <div class="card-excerpt">
-        
-          基本完成
-        
-      </div>
-      <div class="card-post-footer">
-        <div class="post-meta">
-          <time datetime="2021-01-31T12:55:00.000Z">
-            <i 
-              class="iconfont icon-calendar" 
-              style="margin-right: 2px;">
-            </i>
-            <span>2021-01-31</span>
-          </time>
-          
-            
-            
-              
-            
-            <span class="dot"></span>
-            
-              
-              <a 
-                href="/categories/%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/" 
-                class="post-meta-link">
-                日常随笔
-              </a>
-            
-          
-        </div>
-        <a href="/blogs/hello-world/">继续阅读 </a>
-      </div>
-    </article>
-  </div>
-
-</main>
+<div 
+  class="card card-content toc-card" 
+  id="mobiletoc">
+  <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>目录
+</div>
+<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%BD%91%E7%AB%99%E8%BF%81%E7%A7%BB"><span class="toc-text">一、网站迁移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="toc-text">二、评论系统</span></a></li></ol>
+</div></main>
             <aside class="left-column">
               
               <div class="card card-author">
@@ -755,6 +571,18 @@
                <div class="sticky-tablet">
   
   
+    <article class="display-when-two-columns spacer">
+      <div class="card card-content toc-card">
+        <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>目录
+</div>
+<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%BD%91%E7%AB%99%E8%BF%81%E7%A7%BB"><span class="toc-text">一、网站迁移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="toc-text">二、评论系统</span></a></li></ol>
+      </div>
+    </article>
+  
   
   <article class="card card-content categories-widget">
     <div class="categories-card">
@@ -824,92 +652,21 @@
   </article>
   
   
-    <article class="card card-content widescreen-archive archive-widget">
-      <div class="archive-card">
-  <div class="archive-card-header">
-    <i 
-      class="iconfont icon-wodebaobiao" 
-      style="padding-right: 2px;">
-    </i>归档
-  </div>
-  <div class="archive-card-list">
-    
-    
-    
-      
-        
-        
-        
-      
-    
-      
-        
-          <a 
-            href="/archives/2024" 
-            class="archive-card-list-item">
-            2024
-            <span class="archive-card-list-item-badge">1</span>
-          </a>
-        
-        
-        
-      
-    
-      
-        
-          <a 
-            href="/archives/2023" 
-            class="archive-card-list-item">
-            2023
-            <span class="archive-card-list-item-badge">1</span>
-          </a>
-        
-        
-        
-      
-    
-      
-        
-          <a 
-            href="/archives/2022" 
-            class="archive-card-list-item">
-            2022
-            <span class="archive-card-list-item-badge">1</span>
-          </a>
-        
-        
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-    
-      <a 
-        href="/archives/2021" 
-        class="archive-card-list-item">
-        2021
-        <span class="archive-card-list-item-badge">4</span>
-      </a>
-    
-  </div>
-</div>
-    </article>
-  
 </div>
             </aside>
             <aside class="right-column">
               <div class="sticky-widescreen">
   
+  
+    <article class="card card-content toc-card">
+      <div class="toc-header">
+  <i 
+    class="iconfont icon-menu" 
+    style="padding-right: 2px;">
+  </i>目录
+</div>
+<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%BD%91%E7%AB%99%E8%BF%81%E7%A7%BB"><span class="toc-text">一、网站迁移</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="toc-text">二、评论系统</span></a></li></ol>
+    </article>
   
   
   <article class="card card-content">
@@ -946,87 +703,6 @@
 </div>
   </article>
   
-  
-    <article class="card card-content">
-      <div class="archive-card">
-  <div class="archive-card-header">
-    <i 
-      class="iconfont icon-wodebaobiao" 
-      style="padding-right: 2px;">
-    </i>归档
-  </div>
-  <div class="archive-card-list">
-    
-    
-    
-      
-        
-        
-        
-      
-    
-      
-        
-          <a 
-            href="/archives/2024" 
-            class="archive-card-list-item">
-            2024
-            <span class="archive-card-list-item-badge">1</span>
-          </a>
-        
-        
-        
-      
-    
-      
-        
-          <a 
-            href="/archives/2023" 
-            class="archive-card-list-item">
-            2023
-            <span class="archive-card-list-item-badge">1</span>
-          </a>
-        
-        
-        
-      
-    
-      
-        
-          <a 
-            href="/archives/2022" 
-            class="archive-card-list-item">
-            2022
-            <span class="archive-card-list-item-badge">1</span>
-          </a>
-        
-        
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-    
-      <a 
-        href="/archives/2021" 
-        class="archive-card-list-item">
-        2021
-        <span class="archive-card-list-item-badge">4</span>
-      </a>
-    
-  </div>
-</div>
-    </article>
   
 </div>
             </aside>
@@ -1142,6 +818,36 @@
 </a> 
      
      
+     
+      <script>
+  var addImgLayout = function () {
+    var img = document.querySelectorAll('.post-content img')
+    var i
+    for (i = 0; i < img.length; i++) {
+      var wrapper = document.createElement('a')
+      wrapper.setAttribute('href', img[i].getAttribute('data-src'))
+      wrapper.setAttribute('aria-label', 'illustration')
+      wrapper.style.cssText =
+        'width: 100%; display: flex; justify-content: center;'
+      if (img[i].alt) wrapper.dataset.caption = img[i].alt
+      wrapper.dataset.nolink = true
+      img[i].before(wrapper)
+      wrapper.append(img[i])
+      var divWrap = document.createElement('div')
+      divWrap.classList.add('gallery')
+      wrapper.before(divWrap)
+      divWrap.append(wrapper)
+    }
+    baguetteBox.run('.gallery')
+  }
+</script>
+<script>
+  loadScript(
+    "/js/lib/lightbox/baguetteBox.min.js",
+    addImgLayout
+  )
+</script>
+ 
      
      
     <script src="/js/main.js"></script> 
