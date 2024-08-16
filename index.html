@@ -157,7 +157,7 @@
       var setDarkmode = function(mode) {
       var setting = mode || localStorage.getItem('user-color-scheme');
       if(setting === getCssMediaQuery()) {
-        document.documentElement.removeAttribute('data-user-color-scheme');
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
         localStorage.removeItem('user-color-scheme');
         document.getElementById('theme-color').content = themeColor[setting];
         document.getElementById('theme-color').dataset.mode = setting;
@@ -168,7 +168,7 @@
         document.getElementById('theme-color').dataset.mode = setting;
         prismThemeChange();
       } else {
-        document.documentElement.removeAttribute('data-user-color-scheme');
+        document.documentElement.setAttribute('data-user-color-scheme', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         localStorage.removeItem('user-color-scheme');
         document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
         document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
@@ -322,7 +322,7 @@
       </div>
       <div class="card-post-footer">
         <div class="post-meta">
-          <time datetime="2024-08-16T07:00:00.000Z">
+          <time datetime="2024-08-16T09:30:00.000Z">
             <i 
               class="iconfont icon-calendar" 
               style="margin-right: 2px;">

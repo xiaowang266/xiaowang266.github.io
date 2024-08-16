@@ -181,7 +181,7 @@
       var setDarkmode = function(mode) {
       var setting = mode || localStorage.getItem('user-color-scheme');
       if(setting === getCssMediaQuery()) {
-        document.documentElement.removeAttribute('data-user-color-scheme');
+        document.documentElement.setAttribute('data-user-color-scheme', setting);
         localStorage.removeItem('user-color-scheme');
         document.getElementById('theme-color').content = themeColor[setting];
         document.getElementById('theme-color').dataset.mode = setting;
@@ -192,7 +192,7 @@
         document.getElementById('theme-color').dataset.mode = setting;
         prismThemeChange();
       } else {
-        document.documentElement.removeAttribute('data-user-color-scheme');
+        document.documentElement.setAttribute('data-user-color-scheme', window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         localStorage.removeItem('user-color-scheme');
         document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
         document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
@@ -335,7 +335,7 @@
     </h1>
   </header>
   <div class="post-meta post-show-meta">
-    <time datetime="2024-08-16T07:00:00.000Z">
+    <time datetime="2024-08-16T09:30:00.000Z">
       <i 
         class="iconfont icon-calendar" 
         style="margin-right: 2px;">
@@ -354,7 +354,7 @@
     
     
       <span class="dot"></span>
-      <span>919 字</span>
+      <span>930 字</span>
     
   </div>
   
@@ -382,7 +382,7 @@
     id="section" 
     class="post-content">
     <p>因为<a target="_blank" rel="noopener" href="https://waline.js.org/">Waline</a>依托的<a target="_blank" rel="noopener" href="https://vercel.com/">Vercel</a>在内地几乎无法访问，所以大伙应该都评论不了。为了尽快解决这个问题，才有了这次更新。不过随着学习的推进，我又发现了一些新问题，有了一些新想法。</p>
-<p>同时，我还把Waline不能调成暗黑模式的错误给修了，这个错误竟然没被博客主题作者发现。已提交至Issues：<a target="_blank" rel="noopener" href="https://github.com/theme-kaze/hexo-theme-kaze/issues/87#issuecomment-2289421341">Waline无法跟随博客开关暗黑模式 · Issue #87</a>。</p>
+<p>同时，我还摸索着把Waline不能调成暗黑模式的错误给修了。这个错误有点儿复杂，没被博客主题的作者发现倒也正常。已提交至Issues：<a target="_blank" rel="noopener" href="https://github.com/theme-kaze/hexo-theme-kaze/issues/87#issuecomment-2293171107">Waline无法跟随博客开关暗黑模式 · Issue #87</a>。</p>
 <p>另外，我把<a target="_blank" rel="noopener" href="https://rss.com/">RSS</a>功能给加上了（就是那个长得像歪了的WiFi的东西），虽然是老东西了，但应该还有人用吧。</p>
 <p>省流：</p>
 <p><u><mark><strong>博客新链接</strong></mark></u>：<a href="https://www.xiaowang266.top/">xiaowang266.top</a>或<a href="https://www.xiaowang266.top/">www.xiaowang266.top</a></p>
@@ -471,7 +471,7 @@
           placeholder: '',
           meta: ["nick","mail","link"],
           requiredMeta: [],
-          dark: ':root:not([data-user-color-scheme])',
+          dark: '[data-user-color-scheme=dark]',
           login: 'enable',
 
           wordLimit: 0,
