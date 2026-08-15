@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /blogs/
+Disallow: /archives/
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /about/
+Disallow: /links/
+Sitemap: https://www.xiaowang266.top/sitemap.xml
